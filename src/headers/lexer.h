@@ -17,6 +17,18 @@ typedef enum {
     SEPERATOR
 } typeSEPERATOR;
 
+typedef struct {
+    typeKEYWORD type;
+} TokenKEYWORD;
+
+typedef struct {
+    typeLITERAL type;
+} TokenLITERAL;
+
+typedef struct {
+    typeSEPERATOR type;
+} TokenSEPERATOR;
+
 void lexer(FILE* file);
 
 #endif
